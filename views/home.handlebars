@@ -1,0 +1,14 @@
+<div class="text-center">
+    {{#if qrcode}}
+    <img src="{{qrcode}}" class="img-fluid" alt="QR Scan To connect Whatsapp" id="qr-image">
+    <h6>Scan QR to connect WhatsApp</h6>
+    {{else}}
+    <h6>QR Scanned</h6>
+    {{/if}}
+</div>
+
+<script>
+    setTimeout(function () {
+        window.location.reload(1);
+    }, 25000);
+</script>
